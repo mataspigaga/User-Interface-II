@@ -67,21 +67,46 @@ body {
 }
 
 header {
+    height: 70vh;
+    background-image:url(https://picsum.photos/seed/somethingcoolio/1000/1000) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 50px 5%;
     /* border: 1px solid black; */
     align-items: center;
 }
-.title-card {
+.main-text-container {
+    height: 55vh;
     display: flex;
     justify-content: center;
-    text-align: center;
-    height: 450px;
-    width: 100%;
+    align-items: center;
 }
 
-.title-card .main-text {
+.main-text-container .main-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-text-container .main-text a {
+    margin: 20px 30%;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    font-size: 30px;
+    border: 5px solid white;
+    padding: 15px 30px;
+}
+
+/* .title-card .main-text {
     background:url(https://picsum.photos/seed/civerrr/1000/400);
     width: 90%;
     height: 400px;
@@ -89,11 +114,10 @@ header {
     flex-direction: column;
     align-content: center;
     background-repeat: no-repeat;
-}
+} */
 
-.title-card .main-text h2 {
-    font-size: 45px;
-    margin-top: 110px;
+.main-text-container .main-text h2 {
+    font-size: 40px;
     line-height: 1.2;
     color: white;
     text-shadow: 5px 5px 10px black;
@@ -168,7 +192,6 @@ a {
     }
 
     header nav a {
-        margin: 0 0 10px 0;
         text-align: center;
     }
 
@@ -196,6 +219,15 @@ a {
 }
 
 @media (max-width:500px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        margin: 0 0 10px 0;
+    }
+
     .title-card .main-text h2 {
         margin-top: 90px;
         font-size: 28px;
