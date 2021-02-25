@@ -53,13 +53,75 @@ table {
 	border-spacing: 0;
 }
 
-/* start of the code */
+/* start of my code */
 
 body {
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    padding: 20px 0;
+    margin: 0 auto;
+    /* max-width: 1000px; */
+    /* border: 1px solid black; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 5%;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+.title-card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 450px;
+    width: 100%;
+}
+
+.title-card .main-text {
+    background:url(https://picsum.photos/seed/civerrr/1000/400);
+    width: 90%;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    font-family: Poppins, sans-serif;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+.title-card .main-text h2 {
+    font-size: 45px;
+    margin-top: 120px;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
+}
+
+.featured-project {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.featured-project p {
+    margin: 15px 0 0 0;
+}
+
+h1 {
+    font-size: 36px;
 }
 
 h2 {
@@ -70,20 +132,39 @@ h2 span {
     font-style: italic;
 }
 
-header div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+footer {
+    text-align: center;
+    padding: 50px;
+    background: lightcyan;
+    margin-top: 50px;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin: 0 5px;
 }
 
-.main-text {
-    background:url(https://picsum.photos/seed/lkadsfq/800/400);
-    width: 800px;
-    height: 400px;
+.title-card .main-text #title-card-button {
+    border: none;
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px black;
+    margin: 20px auto;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
+
+
+/* 
+@media (max-width:800px) {
+    .container {}
+}
+
+@media (max-width:500px) {
+    .container {}
+}  */
