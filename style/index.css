@@ -53,7 +53,7 @@ table {
 	border-spacing: 0;
 }
 
-/* start of my code */
+/* general page styling */
 
 body {
     font-family: Poppins, sans-serif;
@@ -66,6 +66,8 @@ body {
     /* border: 1px solid black; */
 }
 
+/* header styling */
+
 header {
     height: 70vh;
     background-image:url(https://picsum.photos/seed/somethingcoolio/1000/1000) ;
@@ -73,6 +75,18 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-family: "Source Code Pro", monospace;
+}
+
+h2 span {
+    font-style: italic;
 }
 
 nav {
@@ -104,17 +118,8 @@ nav {
     font-size: 30px;
     border: 5px solid white;
     padding: 15px 30px;
+    background-color: rgba(0,0,0,0.5);
 }
-
-/* .title-card .main-text {
-    background:url(https://picsum.photos/seed/civerrr/1000/400);
-    width: 90%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    background-repeat: no-repeat;
-} */
 
 .main-text-container .main-text h2 {
     font-size: 40px;
@@ -124,6 +129,8 @@ nav {
     margin-left: 40px;
     margin-right: 40px;
 }
+
+/* projects section styling */
 
 .projects {
     display: flex;
@@ -144,17 +151,7 @@ nav {
     margin: 15px 0 0 0;
 }
 
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-family: "Source Code Pro", monospace;
-}
-
-h2 span {
-    font-style: italic;
-}
+/* footer styling */
 
 footer {
     text-align: center;
@@ -173,25 +170,13 @@ a {
     margin: 0 5px;
 }
 
-.title-card .main-text #title-card-button {
-    border: none;
-    color: white;
-    font-size: 30px;
-    text-shadow: 5px 5px 10px black;
-    margin: 20px auto;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-
-
 @media (max-width:800px) {
     header nav {
         display: flex;
         flex-direction: column;
     }
 
-    header nav a {
+    header nav .links a {
         text-align: center;
     }
 
@@ -201,12 +186,15 @@ a {
     }
 
     header h1 {
-        margin: 0 0 20px 0;
+        margin: 0 0 30px 0;
     }
 
-    .title-card .main-text h2 {
-        margin-top: 100px;
+    .main-text-container .main-text h2 {
         font-size: 35px;
+    }
+
+    .main-text-container .main-text a {
+        font-size: 25px;
     }
 
     .featured-project {
@@ -228,9 +216,13 @@ a {
         margin: 0 0 10px 0;
     }
 
-    .title-card .main-text h2 {
-        margin-top: 90px;
-        font-size: 28px;
+    .main-text-container .main-text h2 {
+        font-size: 20px;
+    }
+
+    .main-text-container .main-text a {
+        font-size: 15px;
+        margin: 20px 10%;
     }
 
     .featured-project {
